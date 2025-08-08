@@ -1,0 +1,8 @@
+{
+  "manifest-version": 1,
+  "name": "Export All Tables",
+  "description": "Exports every worksheet’s data as separate tabs in one Excel file",
+  "version": "1.0.0",
+  "scripts": [ "extension.js" ],
+  "permissions": [ "content", "context" ]
+}
