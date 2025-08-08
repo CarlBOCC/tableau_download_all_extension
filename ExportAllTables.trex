@@ -3,7 +3,7 @@
           xmlns="http://www.tableau.com/xml/extension_manifest">
 
   <dashboard-extension id="com.occstrategy.exportalltables"
-                       extension-version="1.0">
+                       extension-version="1.1">
     <default-locale>en_GB</default-locale>
     <name resource-id="name"/>
     <description>Exports every worksheet’s data as separate tabs</description>
@@ -12,9 +12,11 @@
             organization="OC&amp;C"
             website="https://www.occstrategy.com"/>
     <min-api-version>1.6</min-api-version>
+
     <source-location>
-      <url>http://localhost:8000/extension.html</url>
+      <url>https://carlbocc.github.io/download_all_vis_extension/extension.html</url>
     </source-location>
+
     <!-- 1×1 transparent PNG in Base64 to satisfy the icon requirement -->
     <icon>
       iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAA
