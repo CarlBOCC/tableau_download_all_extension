@@ -15,7 +15,7 @@
 
     <source-location>
       <!-- Use the *full* page URL once deployed; during dev this can stay as /index.html -->
-      <url>https://agreeable-beach-0d690081e.2.azurestaticapps.net/index.html</url>
+      <url>https://thankful-moss-0f237b503.2.azurestaticapps.net/index.html</url>
     </source-location>
 
     <!-- 1×1 transparent PNG in Base64 to satisfy the icon requirement -->
