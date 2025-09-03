@@ -1,0 +1,26 @@
+trigger:
+  - main   # change if your default branch is different
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+# If you want to keep build inside the SWA task, you don't need extra steps.
+# This task will run your build and then upload the build output to SWA.
+steps:
+  - task: AzureStaticWebApp@0
+    displayName: 'Build & Deploy to Azure Static Web Apps'
+    inputs:
+      # The token you stored as a secret variable in ADO
+      azure_static_web_apps_api_token: '$(SWA_TOKEN)'
+
+      # Where your app lives (repo root in your case)
+      app_location: '/'
+
+      # Build command for your static app (works even without a package-lock.json)
+      app_build_command: 'npm install && npm run build'
+
+      # Folder that contains the built site (our build.js writes to /build)
+      output_location: 'build'
+
+      # (Optional) If you had an Azure Functions API, point it here; else leave blank
+      api_location: ''
